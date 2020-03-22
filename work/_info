@@ -1,0 +1,114 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples/AdderEx
+Cconfig1
+eRobotTestBench
+atest
+Z0 DEx4 work 5 robot 0 22 HH772:k:Y2n:@hM=L:ifB1
+DAx4 work 14 robottestbench 4 test 22 ^9RIP<hJ@[je1dnjT<F^L1
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 DEx4 work 14 robottestbench 0 22 [Z3`DB>zT`[UMaJUa8jiK3
+Z4 w1584822487
+Z5 dC:/Modeltech_pe_edu_10.4a/examples/ProjectPart1
+Z6 8C:\Modeltech_pe_edu_10.4a\examples\ProjectPart1\RobotTestBench.vhd
+Z7 FC:\Modeltech_pe_edu_10.4a\examples\ProjectPart1\RobotTestBench.vhd
+l0
+L46
+V9U[>^C2`I8Fi`FYi@Z3Ml2
+!s100 BmG6jMcmFeo8HBSOCVT881
+Z8 OP;C;10.4a;61
+32
+Z9 !s110 1584822495
+!i10b 1
+Z10 !s108 1584822495.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\ProjectPart1\RobotTestBench.vhd|
+Z12 !s107 C:\Modeltech_pe_edu_10.4a\examples\ProjectPart1\RobotTestBench.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+Erobot
+Z15 w1584614242
+R1
+R2
+R5
+Z16 8C:/Modeltech_pe_edu_10.4a/examples/ProjectPart1/Robot.vhd
+Z17 FC:/Modeltech_pe_edu_10.4a/examples/ProjectPart1/Robot.vhd
+l0
+L4
+VHH772:k:Y2n:@hM=L:ifB1
+!s100 I3f?3g9hC44^PL6Do;Vnm2
+R8
+32
+Z18 !s110 1584820772
+!i10b 1
+Z19 !s108 1584820772.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/ProjectPart1/Robot.vhd|
+Z21 !s107 C:/Modeltech_pe_edu_10.4a/examples/ProjectPart1/Robot.vhd|
+!i113 1
+R13
+R14
+Aautomaton
+R1
+R2
+R0
+l12
+L9
+V>RazTY6[I0>TPT3@^W4<A3
+!s100 NkoB[=AB7J=RTQFlWEV562
+R8
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R13
+R14
+Erobottestbench
+R4
+R1
+R2
+R5
+R6
+R7
+l0
+L4
+V[Z3`DB>zT`[UMaJUa8jiK3
+!s100 2AK9i;`kY[ggU]Q9mNaY20
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Atest
+R1
+R2
+R3
+l16
+L7
+V^9RIP<hJ@[je1dnjT<F^L1
+!s100 z]_2_o1Ld7]KI5Nm5QmTj3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
