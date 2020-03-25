@@ -9,6 +9,7 @@ end System;
 
 architecture AutomatonSystem of System is
     
+    -- Define clock cycles for resting and searching period for the counters.
     constant THRESH_REST_VALUE: integer :=  4;
     constant THRESH_SEARCH_VALUE: integer :=  10;
 
@@ -20,6 +21,7 @@ architecture AutomatonSystem of System is
     end component;
 
     component Count 
+        --threshold variable requires an integer natural for clock cycles.
         generic(threshold : natural);
         port(
             reset, clk, start : in std_logic;
@@ -28,8 +30,8 @@ architecture AutomatonSystem of System is
     end component;
 
     -- These are wire signals used for interconnecting the 3 instances of components.
-    signal rest_signal, search_signal, aboverestth_signal, abovesearchth_signal : std_logic;
-    --signal threshold : natural := 0;
+    signal rest_signal, search_signal, aboverestth_signal, abovesearchth_signal : std_logic := '0';
+    signal threshold : natural := 0;
     begin
         U1 : Robot
         port map(
@@ -39,10 +41,10 @@ architecture AutomatonSystem of System is
             findfood => findfood_sys,
             lostfood => lostfood_sys,
             closetofood => closetofood_sys,
-            success => success_sys,
-            scantimeup => scantimeup_sys,
+            success => success_sys,            
             aboverestth => aboverestth_signal,
             abovesearchth => abovesearchth_signal,
+            scantimeup => scantimeup_sys,
 
             rest => rest_signal,
             search => search_signal,
@@ -70,6 +72,22 @@ architecture AutomatonSystem of System is
         );
     
 end AutomatonSystem;
+
+library work;
+use work.all;
+
+configuration config0 of work.System is
+    for AutomatonSystem
+        
+        for U1 : Robot
+            use entity work.Robot(Automaton);
+        end for;
+        for U2, U3 : Count
+            use entity work.Count(Behav);
+        end for;
+
+    end for;
+end config0;
 
     
 
