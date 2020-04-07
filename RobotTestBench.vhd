@@ -19,11 +19,15 @@ architecture test of RobotTestBench is
             reset <= '1', '0' after 5 ns;
 
 
-            aboverestth <= '0', '1' after 10 ns;
-            findfood <= '0', '1' after 15 ns;
+            aboverestth <= '0', '1' after 15 ns, '0' after 55 ns, '1' after 65 ns;
+            findfood <= '0', '1' after 25 ns;
 
-            lostfood <= '1' after 20 ns;
+            lostfood <= '1' after 35 ns, '0' after 65 ns;
+            abovesearchth <= '1' after 45 ns, '0' after 65 ns;
 
+            athome <= '1' after 55 ns;
+            closetofood <= '1' after 85 ns;
+            success <= '1' after 95 ns;
 
 
 
